@@ -2,7 +2,7 @@
 os.loadAPI("/Utils/Utils") -- Load all Utils
 
 Console.WriteLine(Console.Type.Debug, "I'm working currently on this script.")
-
+Console.ClearScreen()
 -- Write monitor name on every connected monitor
 local peripherals = peripheral.getNames()
 for i = 1, #peripherals do
