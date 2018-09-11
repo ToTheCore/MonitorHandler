@@ -9,6 +9,9 @@ for i = 1, #peripherals do
   if(peripheral.getType(peripherals[i]) == "monitor") then
     local tempPeripheral = peripheral.wrap(peripherals[i])
     tempPeripheral.setTextScale(0.5)
+    
+    -- Clear screen & write text.
+    Console.ClearScreen(tempPeripheral)
     Console.WriteLine(Console.Type.Hint, peripherals[i], tempPeripheral)      
   end
 end
