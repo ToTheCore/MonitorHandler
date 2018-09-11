@@ -12,7 +12,9 @@ for i = 1, #peripherals do
     
     -- Clear screen & write text.
     Console.ClearScreen(tempPeripheral)
-    Console.WriteLine(Console.Type.Hint, peripherals[i], tempPeripheral)      
+    for x = 1, 100 do 
+      Console.WriteLine(Console.Type.Hint, peripherals[i], tempPeripheral)      
+    end
   end
 end
 
