@@ -7,6 +7,6 @@ shell.run("delete", "/MonitorHandler/updater")
 shell.run("delete", "/MonitorHandler/makelist")
 
 -- Runn installer to get all new files.
-shell.run("installer")
+shell.run("/MonitorHandler/installer")
 term.setTextColor(colors.green)
 print("Done.")
