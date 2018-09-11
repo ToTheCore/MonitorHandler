@@ -14,6 +14,7 @@ term.setTextColor(colors.green)
 print("Downloading \"" .. thisRepoName .. "\" files..")
 term.setTextColor(colors.gray)
 shell.run("/openp/github", "get", "ToTheCore/" .. thisRepoName .. "/master/MonitorHandler.lua","/" .. thisRepoName .. "/MonitorHandler")
+shell.run("/openp/github", "get", "ToTheCore/" .. thisRepoName .. "/master/makelist.lua","/" .. thisRepoName .. "/makelist")
 
 -- Downloading installer/updater
 shell.run("/openp/github", "get", "ToTheCore/" .. thisRepoName .. "/master/updater.lua","/" .. thisRepoName .. "/updater")

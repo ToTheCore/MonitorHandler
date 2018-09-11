@@ -1,0 +1,1 @@
+--- This script is used to create a new "monitorHandler.cfg".
