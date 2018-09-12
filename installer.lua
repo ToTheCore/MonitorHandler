@@ -13,10 +13,10 @@ shell.run("delete", "installer")
 term.setTextColor(colors.green)
 print("Downloading \"" .. thisRepoName .. "\" files..")
 term.setTextColor(colors.gray)
-shell.run("/openp/github", "get", "ToTheCore/" .. thisRepoName .. "/master/MonitorHandler.lua","/" .. thisRepoName .. "/MonitorHandler")
-shell.run("/openp/github", "get", "ToTheCore/" .. thisRepoName .. "/master/makelist.lua","/" .. thisRepoName .. "/makelist")
+shell.run("/wget", "https://raw.githubusercontent.com/" .. thisRepoName .. "/master/MonitorHandler.lua","/" .. thisRepoName .. "/MonitorHandler")
+shell.run("/wget", "https://raw.githubusercontent.com/" .. thisRepoName .. "/master/makelist.lua","/" .. thisRepoName .. "/makelist")
 
 -- Downloading installer/updater
-shell.run("/openp/github", "get", "ToTheCore/" .. thisRepoName .. "/master/updater.lua","/" .. thisRepoName .. "/updater")
-shell.run("/openp/github", "get", "ToTheCore/" .. thisRepoName .. "/master/installer.lua","/" .. thisRepoName .. "/installer")
+shell.run("/wget", "https://raw.githubusercontent.com/" .. thisRepoName .. "/master/updater.lua","/" .. thisRepoName .. "/updater")
+shell.run("/wget", "https://raw.githubusercontent.com/" .. thisRepoName .. "/master/installer.lua","/" .. thisRepoName .. "/installer")
 
